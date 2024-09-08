@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./design/contactForm.css">
+  <link rel="preconnect" href="https://fonts.google.com/specimen/Karla"/>
+  
+  <title>Contact form ~ Frontend Mentor</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="PCcentre">
+    <form id="form1">
+      <header id="g1n1">Contact Us</header>
+      <div id="g2n2">
+        <label for="FirstName">
+          First Name *
+        </label><br>
+        <input id="FirstName" type="text" required/>
+      </div>
+
+      <div id="g3n3">
+        <label for="LastName">
+          Last Name *
+        </label><br>
+        <input id="LastName" type="text" required/>
+      </div>
+
+      <div id="g4n4">
+        <label for="email">
+          Email Address  *
+        </label><br>
+        <input id="email" type="email" required />
+      </div>
+
+      <div id="g5n5">
+        <p style="margin-bottom: 0px; font-weight: 500;">Query Type *</p>
+        
+        <div class="g5n5radio">
+          <label for="GeneralEnquiry">
+            General Enquiry
+          </label>
+          <input required id="GeneralEnquiry" name="Query-Type" type="radio" value="General Enquiry"
+          style="margin-left: 1px; margin-right: 1rem;"/>
+        </div>
+       
+        <div class="g5n5radio">
+          <label for="SupportRequest">
+            Support Request
+          </label>
+          <input required id="SupportRequest" name="Query-Type" type="radio" value="Support Request"
+          style="margin-left: 1px;"/>
+        </div>
+      </div>
+
+      <div id="g6n6">
+        <label for="Message">
+          Message *
+        </label><br>
+        <textarea id="Message" name="Message" rows="7" required></textarea>
+      </div>
+
+      <div id="g7n7">
+        <input style="transform: scale(0.68);" id="consent" required type="checkbox" value="I Consent"/>
+        <label for="consent">
+          I consent to being contacted by the team
+        </label>
+      </div>
+
+      <div id="g8n8">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <br>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="#">Boksman Creations</a>.
+    </div>
+  </main>
+
+
+  <!--
+  
+  This field is required
+
+  Last Name
+  This field is required
+
+  Email Address
+  Please enter a valid email address
+  This field is required
+
+  Query Type
+  General Enquiry
+  Support Request
+  Please select a query type
+
+  Message
+  This field is required
+
+  I consent to being contacted by the team
+  To submit this form, please consent to being contacted
+
+  Submit
+
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon!-->
+  
+</body>
+</html>

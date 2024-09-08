@@ -1,0 +1,119 @@
+:root{
+    --Green200-lighter: rgb(204, 233, 217);
+    --Green600-medium: hsl(169, 82%, 27%);
+    --Red: hsl(0, 66%, 54%);
+    --Grey900-darker: rgb(43, 66, 70);
+    --White: hsl(0, 0%, 100%);
+    --Grey500-medium: hsl(186, 15%, 59%);
+}
+ 
+.centre-div{
+    display: flex;  flex-flow: row wrap;
+    justify-content: center;    align-items: center; 
+}
+.attribution { font-size: 0.6rem; text-align: center;  color:var(--Grey900-darker)}
+.attribution a:link, .attribution a:visited{
+   text-decoration: none; color: var(--Grey900-darker);
+}  
+.attribution a:hover{ background-color: hsl(228, 45%, 44%); color: white; }
+
+body{margin: 0%;    background-color: var(--Green200-lighter);   width: 100vw;}
+main.PCcentre{
+    height: 100vh;  width: 100vw;   background-color: var(--Green200-lighter);
+    display: flex;  flex-flow: column nowrap;
+    justify-content: center;    align-items: center;  
+}
+main.PCcentre>form#form1{
+    background-color: var(--White);
+    border: 1px solid var(--White);
+    border-radius: 10px;
+    height: 60vh;   width: 40vw;    padding: 3.1rem;
+    display: grid; gap:0.9rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, auto);   
+}
+main.PCcentre>form#form1 label, #g5n5>p{
+    font: 0.71em sans-serif;
+    color: var(--Grey900-darker);
+}
+input[type="text"], input[type="email"]{
+    border: 1px solid var(--Grey900-darker);
+    border-radius: 0.4rem;
+}
+input[type="text"]:hover, input[type="email"]:hover, #g6n6 textarea:hover{
+    border: 2px solid var(--Grey900-darker);
+}
+#g1n1{
+    grid-column: span 2; font-size: 1.6rem;
+    font-weight: 700;   color: var(--Green600-medium); font-family: Karla;
+}
+#g2n2{
+
+}
+#g2n2 input{
+    width: 19vw;    height: 1.6rem;
+}
+#g3n3{
+    
+}
+#g3n3 input{
+    width: 19vw;    height: 1.6rem;
+}
+#g4n4{
+    grid-column: span 2;
+}
+#g4n4 input{
+    width: 40vw;    height: 1.6rem;
+}
+#g5n5{
+    grid-column: span 2;
+}
+#g5n5 input[type="radio"]{
+    transform: scale(0.75);
+}
+div.g5n5radio{display: inline-block;}
+#g6n6{
+    grid-column: span 2;    grid-row: span 2;
+}
+#g6n6 textarea{
+    width: 40vw;    height: 4rem; font-size: 0.8rem;
+    border: 1px solid var(--Grey900-darker);
+    border-radius: 0.4rem;
+}
+#g7n7{
+    grid-column: span 2;
+}
+#g7n7 label{font-size: 0.68rem;}
+#g8n8{
+    grid-column: span 2;
+}
+#g8n8>button{   padding: 0.65rem 0rem;
+    width: 40vw; height: auto;   text-align: center; color: white;
+    background-color: var(--Green600-medium);
+    font:0.8rem 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   font-weight: 500;
+    border: 1px solid var(--Green600-medium);   border-radius: 0.5rem;
+}
+
+main.PCcentre>form>div input[type="radio"], button[type="submit"]{
+    border: 1px solid var(--Green600-medium);
+    cursor: pointer;
+}
+main.PCcentre>form>div>input[type="radio"]:checked{
+    color: var(--Green600-medium);
+}
+
+
+@media (max-width:460px){
+    body{margin: 0%;}
+    main.PCcentre>#form1{
+        width: 70%;  height: auto;    border-radius: 6px;
+        display: flex !important; flex-flow: column nowrap;    gap: 1rem !important;
+        justify-content: center;    align-items: flex-start;
+    }
+    #g3n3 input, #g2n2 input{
+        width: 40vw;    height: 1.6rem;
+    }
+    #g5n5{display: flex !important; flex-flow: column nowrap;}
+    header#g1n1{font: 1em sans-serif;   font-weight: 700;}
+    #g7n7 label{font-size: 0.44rem !important;}
+}
